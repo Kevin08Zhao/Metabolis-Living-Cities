@@ -1,0 +1,28 @@
+{
+  "name": "metabolis-living-cities",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Metabolis · 生命群岛：以人体系统为规则的 3D 城市建设与探索游戏。",
+  "homepage": "https://kevin08zhao.github.io/Metabolis-Living-Cities/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kevin08Zhao/Metabolis-Living-Cities.git",
+    "directory": "city"
+  },
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "deploy": "node scripts/deploy-pages.mjs"
+  },
+  "dependencies": { "three": "0.186.1" },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/three": "^0.183.0",
+    "typescript": "~5.9.3",
+    "vite": "8.3.3"
+  }
+}

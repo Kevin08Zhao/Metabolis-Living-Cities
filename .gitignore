@@ -1,0 +1,33 @@
+# Dependencies and generated files
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+
+# macOS temporary files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows temporary files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Local agent instructions and configuration
+/agents-local.md
+/CLAUDE.md
+/.codex/
+/.mcp.json
+
+# Per-account local session notes and private briefs
+*.local.md
+/docs/prompts/*.pdf
+
+# Local credentials and caches
+.env
+.env.*
+!.env.example
+__pycache__/
