@@ -1,124 +1,126 @@
-# Metabolis · 生命群岛
+# Metabolis · Living Cities
 
-[在线游玩](https://kevin08zhao.github.io/Metabolis-Living-Cities/) · [项目首页与截图](../README.md) · [新版仓库](https://github.com/Kevin08Zhao/Metabolis-Living-Cities)
+[Play online](https://kevin08zhao.github.io/Metabolis-Living-Cities/) · [Project overview and screenshots](../README.md) · [Browser-game repository](https://github.com/Kevin08Zhao/Metabolis-Living-Cities)
 
-一个以人体系统为规则的城市规划游戏。现在进入游戏会先来到可建设的心肺协作街区：安置细胞住区、铺设血管、扩建心肺配套，再通过从散步到灯火节的六个生活项目检验规划。原有六座详细城市、居民故事和探索手记保留在「漫游群岛」中。
+A city-planning game inspired by human body systems. Start in a buildable heart–lung district: place Cell Homes, lay blood vessels, expand heart–lung support, and test your plans through six everyday-life challenges, from a walk to a lantern festival. The original six detailed cities, resident stories, and Exploration Journal remain available in **Explore the Islands**.
 
-建设旅程面向电脑和平板，包含完整的六章流程、结局与自由建设。经营的是一座逐步接入六大系统的小镇；六座独立城市提供详细的观赏和探索体验。
+The building journey is designed for computers and tablets and includes six complete chapters, an ending, and free building. You manage one town that gradually brings all six systems online; six separate cities provide detailed scenes for sightseeing and exploration.
 
-## 开始游玩
+**Language:** this guide is in English. The published game interface uses Chinese. Interface labels and story titles below are English translations for reference; character names are romanized.
 
-在项目根目录双击 **启动生命群岛.command**，或在此目录运行：
+## Start playing
+
+Double-click the macOS launcher **启动生命群岛.command** in the repository root, or run these commands in this directory:
 
 ```sh
 npm install
 npm run dev
 ```
 
-打开 http://127.0.0.1:5173/ 。需要支持 WebGL 的现代浏览器与 Node.js 22.12+；本地默认仅监听本机。美术、字体回退和音效均可在本地运行，不使用 PixelLab 或在线素材服务。
+Open http://127.0.0.1:5173/. You need a modern browser with WebGL and Node.js 22.12 or later. The local server listens only on your machine by default. Artwork, fallback fonts, and sound run locally without PixelLab or online asset services.
 
-## 建设生活 · 身体的一天
+## Build Life · A Day in the Body
 
-这是一段有开局、六章挑战、永久成长和结局的单人建设流程。建设发生在一座持续保留的心肺协作小镇，逐步加入消化、肾脏、神经和免疫设施；原有六座独立详细城市仍可自由漫游。
+This single-player building journey has an introduction, six challenges, permanent growth, and an ending. Construction takes place in one persistent heart–lung town, gradually adding digestive, renal, neural, and immune facilities. The original six detailed cities remain freely explorable.
 
-第一次进入会由小红说明「建设 → 连接 → 生活」。左侧的 **你的下一步** 会根据实际布局、材料、连接、供给和储备持续更新，标明地点与花费，并在地图上高亮对应位置。点击即可完成推荐操作；也可从工具栏选择设施、自由选址和铺路，或从菜单关闭引导。
+On your first visit, Xiaohong introduces **Build → Connect → Live**. The **Your Next Step** panel on the left updates based on your actual layout, materials, connections, supply, and reserves. It identifies a location and cost and highlights the corresponding spot on the map. Click to carry out the suggested action, or choose facilities from the toolbar, place buildings and roads freely, and turn guidance off from the menu.
 
-| 章节 | 实际参与运行的机制 | 完成后留在场景中的成果 |
+| Chapter | Working mechanics | Lasting additions to the scene |
 | --- | --- | --- |
-| 第一条回家的路 | 两处细胞住区安家，肌肉工坊参与散步；血管共享容量，心肺配套提供上游能力 | 回家纪念树，12 份材料 |
-| 把早餐送到每条街 | 绒毛食堂生产营养储备，工作街区和生活事件消耗营养 | 早餐小集、东岸三块新土地，14 份材料 |
-| 留住清凉的午后 | 肾单位水庭回收水分、降低代谢负担，炎热时水分需求上升 | 水庭喷泉，14 份材料 |
-| 一起学一段旋律 | 神经信号塔协调附近工作街区；覆盖受选址、距离与供给影响 | 细胞乐台、南岸四块新土地，16 份材料 |
-| 把小小伤口照顾好 | 免疫巡护站根据氧气、营养和信号支持修复街角 | 守护街灯，16 份材料 |
-| 生命小镇的灯火节 | 同时照顾各项供给、储备、覆盖和修复，保留一座花园 | 灯火、通关纪念册、自由建设，20 份材料 |
+| The First Road Home | Establish two Cell Homes and use the Muscle Workshop for a walk; blood vessels share capacity and heart–lung support provides upstream supply | Homecoming Tree; 12 materials |
+| Breakfast on Every Street | The Villus Kitchen produces nutrient reserves consumed by working districts and everyday events | Breakfast Market and three new east-bank plots; 14 materials |
+| A Cool Afternoon | The Nephron Water Garden recovers water and reduces metabolic load; hot weather increases water demand | Water Garden Fountain; 14 materials |
+| Learning a Melody Together | Neural Signal Towers coordinate nearby working districts; coverage depends on placement, distance, and supply | Cell Bandstand and four new south-bank plots; 16 materials |
+| Caring for a Little Wound | The Immune Patrol Station repairs the street corner with oxygen, nutrients, and signal support | Guardian Streetlight; 16 materials |
+| The Living Town Lantern Festival | Maintain supply, reserves, coverage, and repair while keeping a garden | Lanterns, completion album, and free building; 20 materials |
 
-初始九块地逐步扩建到十六块。每章保留已有布局，开放一种新机制和新伙伴。生活挑战持续 60–100 个模拟秒；准备、调整、观察和重玩由玩家自己掌握。可以在 15–30 分钟的一次游玩中推进数章，也可以随时保存离开。
+The initial nine plots gradually expand to sixteen. Each chapter preserves your layout and introduces a new mechanic and companion. Challenges last 60–100 simulation seconds; you set the pace for preparation, adjustments, observation, and replays. Progress through several chapters in a 15–30-minute session, or save and leave at any time.
 
-### 清楚的目标与反馈
+### Clear goals and feedback
 
-- 首次安家连续稳定供给 5 秒，居民送来 6 份材料并开放肌肉工坊。之后每章列出建筑、连接与高峰供给目标。
-- 从早餐开始，每章中途有一次实际影响资源、后续运输需求或首次通关奖励的安排。等待选择时挑战和资源暂停，不会因阅读而失败。
-- 一颗星代表完成本章，第二颗星要求至少 95% 的时间稳定运行，第三颗星是章节专属目标。六章最多 18 星，另有 10 枚永久徽章。
-- 结算自动展示稳定时间、平均供氧、材料奖励、新纪念物和下一章入口。通关后可继续建设、拍照、改名、重玩章节争取满星。重玩保留最佳星级，不重复发放材料。
-- 失败保留全部布局和材料，调整后免费重试。菜单也可以提前结束本轮、保留布局。供给卡会指出缺氧、断路、低储备或覆盖不足的原因。
+- Keep the first homes stably supplied for five consecutive seconds to receive six materials from the residents and unlock the Muscle Workshop. Later chapters list their building, connection, and peak-supply goals.
+- From the breakfast chapter onward, a mid-chapter decision changes resources, later transport demand, or first-completion rewards. Challenges and resources pause while you choose, so taking time to read does not cause failure.
+- The first star marks chapter completion, the second requires stable operation for at least 95% of the challenge, and the third depends on a chapter-specific goal. Earn up to 18 stars across six chapters, plus 10 permanent badges.
+- Results show stable operating time, average oxygen supply, material rewards, new keepsakes, and the next chapter. After completing the story, continue building, take photos, rename the town, or replay chapters for full stars. Replays preserve your best rating and do not award the same materials again.
+- Failure preserves your entire layout and materials. Adjust and retry for free, or end an attempt early from the menu while keeping the layout. Supply cards explain oxygen shortages, broken connections, low reserves, and insufficient coverage.
 
-### 建设与观察
+### Building and observation
 
-- 道路容量按真实连接共享，升级上游不能解决下游堵点。配送员按计算出的路线移动，未接通的街区不会凭空获得物流。
-- 食堂、水庭、信号塔和巡护站有各自的立体造型。水庭转轮和信号塔随供给运转；选择信号塔或进行旋律章节时，黄色连线显示实际覆盖。街角修复会出现现场小队，灯火节有独立的晚间色调。
-- 建筑和道路回收全额返还，心肺配套可逐级回收，迁移免费。可以撤销最近 30 次建设；阶段奖励和开始挑战时重置撤销历史，避免旧操作覆盖奖励。
-- 膜间花园用于生活布置，不提供供氧加成。点击建筑可走近街区，点击小红或「跟随小红」可跟随配送；拖动镜头解除跟随。
-- 支持手动 360° 环绕、俯瞰、缩放、暂停和 0.5× / 1× / 2× 速度。暂停时仍可建设和观察。打开游戏菜单、成就或结算时自动暂停，关闭后恢复原先播放状态。
-- 准备期间快速补充储备；离开建设模式、等待事件选择或关闭页面时，不计挑战进度。离线不会继续消耗。
+- Road capacity is shared through actual connections. Upgrading upstream capacity cannot remove a downstream bottleneck. Couriers follow calculated routes, and disconnected districts receive no deliveries.
+- Kitchens, Water Gardens, Signal Towers, and Patrol Stations have distinct 3D models. Water wheels and Signal Towers operate according to their supply. Selecting a Signal Tower or playing the melody chapter shows actual coverage with yellow lines. A repair crew appears at the street corner, and the lantern festival has its own evening palette.
+- Recycling buildings and roads returns their full cost. Heart–lung support can be recycled one level at a time, and moving buildings is free. Undo up to 30 building actions. Milestone rewards and the start of a challenge reset undo history so an earlier action cannot overwrite a reward.
+- Membrane Gardens provide living space without increasing oxygen supply. Click a building to approach its district, or click Xiaohong or **Follow Xiaohong** to follow deliveries. Drag the camera to stop following.
+- Use manual 360° orbit, overhead views, zoom, pause, and 0.5× / 1× / 2× speed. You can build and observe while paused. Opening the game menu, achievements, or results pauses automatically; closing them restores the previous running state.
+- Reserves refill quickly during preparation. Challenge progress stops when you leave building mode, wait for an event choice, or close the page. Resources are not consumed while offline.
 
-### 存档与恢复
+### Saves and recovery
 
-建设存档保存在当前浏览器的 `metabolis.planning.v2`。每次建设、选择、里程碑、离开页面以及每 5 个模拟秒保存；刷新后恢复章节、布局、资源和待选事件。旧版 `metabolis.planning.v1` 自动迁移，保留建筑、材料与首章完成记录，不覆盖探索或港口故事。
+Building progress is stored in the current browser under `metabolis.planning.v2`. It is saved after each building action, choice, milestone, page exit, and every five simulation seconds. Refreshing restores the chapter, layout, resources, and pending events. Earlier `metabolis.planning.v1` saves migrate automatically, preserving buildings, materials, and first-chapter completion without overwriting exploration or harbor-story progress.
 
-菜单中的「再建设一个新小镇」会把当前小镇备份到 `metabolis.planning.previous-city`，然后开始新城市；「切换到上一座小镇」可在两个存档间切换。浏览器存储不可用时会显示提示。照片可下载，建设进度目前只保存在本浏览器。
+**Build Another Town** in the menu backs up the current town to `metabolis.planning.previous-city` before starting a new one. **Switch to the Previous Town** swaps between the two saves. A message appears if browser storage is unavailable. Photos can be downloaded; building progress is currently stored only in this browser.
 
-所有容量、材料、时间和覆盖距离均为游戏平衡参数，不是生理测量值。供给与回流被简化为一条成对建设的连接；固定主循环保留右心 → 肺 → 左心 → 组织 → 右心的顺序。水庭的回收、补水与资源储备采用简化模型。
+All capacities, materials, durations, and coverage distances are game-balance values rather than physiological measurements. Supply and return flow are simplified into a paired connection built together. The fixed main circuit preserves the order **right heart → lungs → left heart → tissues → right heart**. Water recovery, replenishment, and resource reserves use simplified models.
 
-## 漫游群岛
+## Explore the Islands
 
-- 拖拽平移，滚轮或双指缩放，也可以使用右侧的缩放与全景按钮。
-- 点击城市地标或城市列表，进入独立的完整城区：分区建筑、专用双向运输车道、步道、细胞居民和运转中的设备。
-- 城区中左键拖动或单指拖动可无限制水平 360° 环绕；右键或双指平移，滚轮或双指缩放。俯仰受到限制，以免镜头钻入地面。
-- 点击地标或街区目录，镜头移入该建筑近景并显示运作说明；可在全城、街区和俯瞰三种视角间切换。
-- 点击「街角生活」走近细胞生活街：补给铺、书屋、阳台、庭院、候车亭和街边座位。居民有不同衣着、步速、去向和停留节奏，也有读书、聊天、购物与休息的小场景。
-- 开启自动环绕，或使用「展开视野」收起档案。地标标签可单独隐藏。暂停时仍可手动观察。
-- 点击小红，走完「右心 → 肺 → 左心 → 大脑组织 → 右心」五站循环。
-- 选择休息、散步、进食、睡眠，观察心跳、呼吸、血流与营养活动的变化。
-- 暂停、调整速度，或开启轻柔的心跳与城市环境声。空格暂停，Esc 返回全景。
-- 拜访足迹保存在当前浏览器；浏览器禁用本地存储时，仍可正常探索。
+- Drag to pan and use the scroll wheel or a two-finger gesture to zoom. Zoom and overview buttons are also available on the right.
+- Click a city landmark or a city-list entry to enter its complete district, with distinct building zones, dedicated two-way transport lanes, paths, cell residents, and working equipment.
+- In a district, drag with the left mouse button or one finger for unrestricted horizontal 360° orbit. Use the right mouse button or two fingers to pan, and the scroll wheel or a two-finger gesture to zoom. Vertical camera angles are limited to prevent movement below ground.
+- Click a landmark or district-directory entry to move closer and read how it works. Switch between whole-city, district, and overhead views.
+- Choose **Street-Corner Life** to visit cell neighborhoods with supply shops, bookshops, balconies, courtyards, bus shelters, and street-side seats. Residents have different clothes, walking speeds, destinations, and stopping patterns, with scenes of reading, conversation, shopping, and rest.
+- Enable automatic orbit or choose **Expand the View** to collapse the information panel. Landmark labels can be hidden separately. Manual observation remains available while paused.
+- Click Xiaohong to follow the five-stop circuit: **right heart → lungs → left heart → brain tissue → right heart**.
+- Select rest, walking, eating, or sleep to observe changes in heartbeat, breathing, blood flow, and nutrient activity.
+- Pause, adjust the speed, or enable the gentle heartbeat and city ambience. Space pauses; Esc returns to the overview.
+- Visits are saved in the current browser. Exploration still works when local storage is disabled.
 
-## 新的探索体验
+## Additional exploration experiences
 
-- **居民与发现**：每城有三位有名字的居民。也可直接点击街上的居民或车辆，查看当前状态、目的地和运输内容，并跟随其移动。居民沿已有街道执行走动、停留的日常循环；不是自由对话角色。
-- **陪小红去送氧**：五站自动旅程，依次经过右心、肺、左心、大脑组织和右心。镜头随城市切换，途中可暂停、跳到下一站或结束；完成后写入手记。各站讲解时间经过压缩。
-- **偶遇小事件**：每城有自己的三阶段短事件和视觉线索，持续24秒，之后回到日常。到现场看完交接阶段，会获得一条发现。
-- **跟随身体变化**：在「居民与发现」中选休息、散步、进食或睡眠，顺着三个讲解站点观察模拟状态逐渐改变。结束按钮可恢复开始前的生活状态；讲解顺序不代表真实生理反应的先后顺序。
-- **人体观察窗**：可拖动或用方向键移动的简化结构对照图，跟随附近地标更新名称。覆盖六个系统，可将发现记入手记。这是说明性图示，不是医学影像或真实三维透视。
-- **街景体验**：沿街漫游、坐在街边、搭乘细胞慢车。拖动镜头即可解除跟随。主动开启环境声后，会听到有方向和距离变化的合成街景提示音。
-- **明信片与机位**：拍照模式隐藏界面。照片和机位保存在本浏览器的探索手记中，照片可下载，机位可回访；最多保留4张照片和8个机位，超出时替换最早一项。浏览器存储失败会显示提示。
-- **探索手记**：记录认识的居民、遇到的事件、结构发现、完成的旅程与状态观察；和原有六城足迹独立保存。刷新后仍可查看，非法或损坏记录会被过滤。
+- **Residents and Discoveries:** Each city has three named residents. Click a resident or vehicle on the street to see its current status, destination, and cargo, or follow its movement. Residents follow authored walking and stopping routines along existing streets; they do not offer open-ended conversation.
+- **Deliver Oxygen with Xiaohong:** An automatic five-stop journey through the right heart, lungs, left heart, brain tissue, and right heart. The camera follows the city transitions. Pause, skip to the next stop, or end early. Completion is recorded in the journal. Explanations at each stop use compressed timing.
+- **Little Encounters:** Each city has a short three-phase event with visual cues. Events last 24 seconds before everyday activity resumes. Observe the handover phase on site to earn a discovery.
+- **Follow the Body’s Changes:** Choose rest, walking, eating, or sleep in **Residents and Discoveries**, then follow three explanatory stops as the simulated state changes. Ending the experience can restore the previous life state. The explanation order does not represent the order of real physiological responses.
+- **Body Observation Window:** Drag a simplified structural diagram or move it with the arrow keys. It updates the displayed name near landmarks, covers all six systems, and records discoveries in the journal. It is an explanatory illustration, not a medical image or a true 3D view through the body.
+- **Street-Life Experiences:** Stroll along the streets, sit by the roadside, or ride a slow cell shuttle. Drag the camera to stop following. After enabling ambience, hear synthesized street cues that vary with direction and distance.
+- **Postcards and Viewpoints:** Photo mode hides the interface. Photos and camera viewpoints are stored in this browser’s Exploration Journal. Download photos and revisit viewpoints. Keep up to four photos and eight viewpoints; new entries beyond those limits replace the oldest. A message appears if browser storage fails.
+- **Exploration Journal:** Records residents you have met, events, structural discoveries, completed journeys, and state observations independently of the original six-city visit history. Records remain available after refresh, and invalid or corrupted entries are filtered out.
 
-## 肺泡港 · 小红的一天
+## Alveolar Harbor · A Day with Xiaohong
 
-进入肺泡云朵港，点击「和小红一起上班」，或从任一城市的「居民与发现」进入。港口新增与生活街相连的步道、气体交接柜台、等候区、风铃、花房和休息长椅。
+Enter **Alveolar Harbor** and select **Go to Work with Xiaohong**, or start from **Residents and Discoveries** in any city. The harbor includes paths connected to the neighborhood, a gas-exchange counter, a waiting area, wind chimes, a flower shop, and benches.
 
-故事包括出发、等候、认识交接伙伴、气体交接、返回街角和下班小聚。角色会在场景中带路、招手、排队、携带补给和坐下。交接前需要玩家认出云云；可点击场景中的居民，也可点击名片。认错会得到提示，不扣分。其余段落自动进行，也能使用「快进这一段」。以正常速度观看约需三分钟，取决于阅读和停留时间。
+The story includes departure, waiting, meeting the exchange partner, gas exchange, returning to the street corner, and an after-work gathering. Characters lead the way, wave, queue, carry supplies, and sit down. Before the exchange, identify Yunyun by clicking a resident in the scene or a name card. An incorrect choice gives a hint without a penalty. Other sections advance automatically, or you can select **Skip Ahead**. At normal speed, the story takes about three minutes, depending on reading and pauses.
 
-故事与全局模拟共用时钟。暂停会停止动作和计时，离开肺泡港会暂存进度。阶段变化、离城及关闭页面时保存；进行中另每五秒保存一次。浏览器意外退出时最多可能丢失最近五秒进度。回来后点击故事入口即可继续。
+The story shares the global simulation clock. Pausing stops movement and timing; leaving Alveolar Harbor saves progress. Saves occur on stage changes, when leaving the city or closing the page, and every five seconds while the story is running. An unexpected browser exit can lose at most the latest five seconds of progress. Return to the story entrance to continue.
 
-完成后，居民会使用熟悉的问候，手记会留下经历。点击「给大家拍张合照」进入摄影模式，按「拍下这刻」保存；合照会实际出现在花房旁的相框中，可点击「港口的记忆」查看和下载。工作日进度、完成次数和最近一张港口合照单独保存在 `metabolis.harbor.workday.v1`，不会因明信片列表轮替而丢失。再次体验保留已经建立的记忆。
+After completion, residents use familiar greetings and the journal records your experience. Select **Take a Group Photo** to enter photo mode, then **Capture This Moment** to save. The photo appears in the frame beside the flower shop; select **Harbor Memories** to view or download it. Workday progress, completion count, and the latest harbor group photo are stored separately under `metabolis.harbor.workday.v1`, so rotating the postcard list does not remove them. Replaying preserves the memories already established.
 
-这是一段经过编排的生活故事。真实气体交换连续发生，不需要排队或人工搬运；柜台、箱子与休息场景属于拟人化表达。港口中的泡泡、小青、云云与居民菜单对应同一组角色。
+This is an authored everyday-life story. Real gas exchange happens continuously without queues or manual handling; counters, boxes, and rest scenes are personifications. Paopao, Xiaoqing, and Yunyun in the harbor are the same characters shown in the resident menu.
 
-## 设计与科普边界
+## Design and science communication
 
-美术采用原创程序化立体模型：奶油色膜状细胞小屋、器官地标、神经元枝芽、平滑管道和细胞居民。六城分别对应循环、神经、呼吸、消化、泌尿和免疫系统。
+The artwork uses original procedural 3D models: cream-colored membrane-like cell homes, organ landmarks, branching neurons, smooth pipes, and cell residents. The six cities represent the circulatory, nervous, respiratory, digestive, urinary, and immune systems.
 
-各城包含五至六处可近看的主要功能地标及外围居民街区：心脏为四腔双环泵站，大脑为放射通信网络，肺部为树状双叶交换港，消化城为曲折加工工序，肾脏为双侧肾单位水渠，免疫城为六角淋巴要塞。车辆按专用车道双向行驶，有不同车型和速度；细胞巴士停站，后车保持距离、减速等待。居民在步道上双向来往，途中会停留，也会在商铺和树下休息。车流、步行、日常动作和植被摆动均受同一模拟时钟控制，支持暂停与速度变化。
+Each city has five or six main functional landmarks for close observation and surrounding residential streets. The heart is a four-chamber, two-circuit pump station; the brain is a radial communication network; the lungs form a branching, two-sided exchange harbor; the digestive city follows a winding processing route; the kidneys form paired nephron canals; and the immune city is a hexagonal lymphatic fortress. Vehicles of different types and speeds travel both ways in dedicated lanes. Cell buses stop at stations, while following vehicles keep their distance and slow down to wait. Residents walk in both directions, stop along the way, and rest near shops and trees. Traffic, walking, everyday actions, and vegetation movement share one simulation clock with pause and speed controls.
 
-住宅按不规则间距布置并面向街道，门前小径连接主路。各城的生活街有不同的店铺招牌与房屋组合：肺泡花房、神经书屋、营养小集和肾脏水岸步桥等。光照采用温暖侧光；睡眠时光线变暗，窗内透出暖光。这些日常生活情境延续人体城市的艺术比喻。
+Homes face the streets at irregular intervals, with entrance paths connected to the main road. Each city’s neighborhood has its own signs and housing combinations, including the alveolar flower shop, neural bookshop, nutrient market, and renal waterfront footbridge. Warm side lighting becomes dimmer during sleep, while windows glow. These everyday scenes extend the artistic metaphor of a city within the body.
 
-每次仅加载正在观察的详细城区，切换时释放模型、材质、阴影、店铺招牌贴图及交互资源；静态建筑按材质合并，车辆与居民共享模型。城区汽车、城门和步道是生理活动的视觉比喻，不代表真实解剖结构或交通规则。
+Only the detailed district currently being viewed is loaded. Switching districts releases models, materials, shadows, shop-sign textures, and interaction resources. Static buildings are merged by material, while vehicles and residents share models. Cars, city gates, and paths are visual metaphors for physiological activity rather than literal anatomy or traffic rules.
 
-城市比例与地理位置为艺术化表达。红、蓝道路表示相对含氧状态，真实血液不会变蓝。肺动脉低氧、肺静脉富氧；其他展示的体循环支路则相反。营养城内部的肝脏分站代表门静脉处理过程；其他未绘制的系统、支路和淋巴回流经过简化。动画采用趋势模型，数值不是个人测量数据。睡眠模式示意安静的非快速眼动睡眠。
+City scale and geography are artistic interpretations. Red and blue roads represent relative oxygen levels; real blood does not turn blue. Pulmonary arteries carry oxygen-poor blood and pulmonary veins carry oxygen-rich blood, while the other depicted systemic branches have the reverse oxygen relationship. The liver station inside the nutrient city represents portal-vein processing. Systems, branches, and lymphatic return routes not shown are simplified. Animations use trend models, and displayed values are not personal measurements. Sleep mode illustrates quiet non-REM sleep.
 
-游戏内「了解这个世界」提供 NIH 各研究所的科普资料链接。
+In-game **About This World** links to educational resources from NIH institutes.
 
-## 开发与验证
+## Development and validation
 
 ```sh
-npm test       # 供给网络、建设成本、挑战与存档，以及探索/街景/故事回归
-npm run build # 严格 TypeScript 检查与生产构建
+npm test       # Supply, building costs, challenges, saves, exploration, street life, and story regressions
+npm run build  # Strict TypeScript checks and production build
 npm run preview
 ```
 
-`src/model.ts` 管理科普内容、路线和模拟规则；`src/world.ts` 管理群岛及场景切换；`src/city-plans.ts` 定义六座城的街道与功能分区；`src/district.ts` 管理城区美术、设备动画与环绕镜头；`src/street-life.ts` 管理车辆跟驰、停站与居民步行节奏；`src/experience.ts` 管理居民、事件、旅程与手记数据；`src/explore-ui.ts` 管理探索交互；`src/observation.ts` 管理结构对照窗；`src/soundscape.ts` 管理合成位置音效；`src/workday.ts` 管理工作日的进度与存档，`src/harbor.ts` 管理港口场景和角色动作，`src/workday-ui.ts` 管理故事、交接与合照交互；`src/main.ts` 与 `src/style.css` 管理界面、旅行和响应式布局。
+`src/model.ts` manages educational content, routes, and simulation rules; `src/world.ts` manages the islands and scene transitions; `src/city-plans.ts` defines streets and functional districts for the six cities; `src/district.ts` manages district artwork, equipment animation, and orbit cameras; `src/street-life.ts` handles vehicle following, stops, and pedestrian timing; `src/experience.ts` manages residents, events, journeys, and journal data; `src/explore-ui.ts` manages exploration interactions; `src/observation.ts` manages the structural observation window; and `src/soundscape.ts` manages synthesized positional sound. `src/workday.ts` manages workday progress and saves, `src/harbor.ts` manages harbor scenes and character actions, and `src/workday-ui.ts` handles story, exchange, and group-photo interactions. `src/main.ts` and `src/style.css` manage the interface, travel, and responsive layouts.
 
-经营模块独立于探索模块：`src/planning.ts` 管理供给网络、材料与项目进度；`src/planning-scene.ts` 将真实连接与运输路线渲染为街区；`src/planning-ui.ts` 管理建设交互、撤销和存档；`src/campaign.ts` 定义六章内容、选择与徽章；`src/planning-guide.ts` 根据实际布局生成下一步建议；`src/planning.css` 与 `src/campaign-ui.css` 管理电脑、平板与窄屏布局。
+The building module is separate from exploration. `src/planning.ts` manages the supply network, materials, and project progress; `src/planning-scene.ts` renders actual connections and transport routes as a district; `src/planning-ui.ts` manages building interactions, undo, and saves; `src/campaign.ts` defines the six chapters, choices, and badges; and `src/planning-guide.ts` generates next-step suggestions from the actual layout. `src/planning.css` and `src/campaign-ui.css` manage desktop, tablet, and narrow-screen layouts.
 
-新版全部位于 `city/`，启动脚本位于项目根目录。
+The browser-game source is entirely within `city/`; the launcher is in the repository root.
